@@ -48,6 +48,7 @@ repositories {
     jcenter()
     mavenCentral()
     maven("https://kotlin.bintray.com/kotlinx")
+    maven("https://dl.bintray.com/aimybox/aimybox-android-sdk/")
 }
 
 dependencies {
@@ -66,4 +67,8 @@ dependencies {
     implementation("com.justai.aimybox:components:$componentsVersion")
     implementation("com.justai.aimybox:core:$aimyboxVersion")
     implementation("com.justai.aimybox:google-platform-speechkit:$aimyboxVersion")
+
+    //implementation("com.justai.aimybox:core:$aimyboxVersion")
+    implementation("com.justai.aimybox:dummy-api:$aimyboxVersion") // or any other Dialog API
+    implementation("com.justai.aimybox:kaldi-speechkit:$aimyboxVersion")
 }
